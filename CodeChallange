@@ -1,0 +1,32 @@
+# Task 1: Create a list of integers and compute the sum
+user_input_list = input("Enter a list of integers separated by spaces: ")
+integer_list = [int(x) for x in user_input_list.split()]
+sum_of_integers = sum(integer_list)
+print(f"Sum of integers: {sum_of_integers}")
+
+# Task 2: Create a tuple of favorite books and print each on a separate line
+favorite_books = ("Book1", "Book2", "Book3", "Book4", "Book5")
+print("Favorite Books:")
+for book in favorite_books:
+    print(book)
+
+# Task 3: Use a dictionary to store information about a person and print it
+person_info = {}
+person_info['name'] = input("Enter your name: ")
+person_info['age'] = input("Enter your age: ")
+person_info['favorite_color'] = input("Enter your favorite color: ")
+print("Person Information:")
+print(person_info)
+
+# Task 4: Create sets, find common elements, and print the result
+set1_input = input("Enter elements for Set 1 separated by spaces: ")
+set2_input = input("Enter elements for Set 2 separated by spaces: ")
+set1 = set(map(int, set1_input.split()))
+set2 = set(map(int, set2_input.split()))
+common_elements = set1.intersection(set2)
+print("Common Elements:", common_elements)
+
+# Task 5: Use list comprehension to filter words with odd number of characters
+word_list = ["apple", "banana", "grape", "kiwi", "orange"]
+odd_length_words = [word for word in word_list if len(word) % 2 != 0]
+print("Words with Odd Number of Characters:", odd_length_words)
